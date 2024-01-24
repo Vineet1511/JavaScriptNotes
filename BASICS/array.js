@@ -43,8 +43,18 @@ const arr4 = arr2.splice(1,4)
 */
 
 const arr5 = [1,2,3,[4,5,6],4,5,[7,8,9,[1,2,3]]]
-console.log(arr5.flat(1));
+// console.log(arr5.flat(1));
 
 // Depth work on index of the arrays inside the original array
 // Infinity or any value higher than the total index of arrays will show a single array
 
+// Adding or pushing arrays inside new array
+
+const A1 = [1,2,3,4,5]
+const A2 = [6,7,8,9,10]
+// A1.push(A2)
+
+// console.log(A1);
+
+const A3 = [...A1, ...A2] // Spread operator will spread the arrays and add it in a new array
+console.log(A3);
