@@ -49,4 +49,4 @@ const bigoBj = { // Nested objects
     }
 }
 
-console.log(bigoBj.empdata.empid); // Proper way to access nested objects
+console.log(bigoBj.empdata?.empid); // Proper way to access nested objects
